@@ -13,11 +13,26 @@ struct HomeView: View {
         VStack(spacing:15) {
             
             PccHeader()
+
+            NavigationLink(
+                destination: FrontCardView()) {
+                    BigButton()
+            }
+            .buttonStyle(PlainButtonStyle())
             
-            BigButton()
-            BigButton()
-            BigButton()
+            NavigationLink(
+                destination: FrontCardView()) {
+                    BigButton()
+            }
+            .buttonStyle(PlainButtonStyle())
+            
+            NavigationLink(
+                destination: FrontCardView()) {
+                    BigButton()
+            }
+            .buttonStyle(PlainButtonStyle())
         }
+        .navigationBarHidden(true)
         .padding(.all, 15)
         
     }

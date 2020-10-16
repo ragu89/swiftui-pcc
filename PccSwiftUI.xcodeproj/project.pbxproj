@@ -14,6 +14,10 @@
 		F719258B25374683008E935C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F719258A25374683008E935C /* HomeView.swift */; };
 		F7192590253747B4008E935C /* BigButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F719258F253747B4008E935C /* BigButton.swift */; };
 		F719259425374BE8008E935C /* PccHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F719259325374BE8008E935C /* PccHeader.swift */; };
+		F71A752A2539E58A00BB354F /* FrontCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71A75292539E58A00BB354F /* FrontCardView.swift */; };
+		F71A752D2539ECAF00BB354F /* BackCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71A752C2539ECAF00BB354F /* BackCardView.swift */; };
+		F71A75302539F41500BB354F /* ConfirmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71A752F2539F41500BB354F /* ConfirmView.swift */; };
+		F71A75332539F48100BB354F /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71A75322539F48100BB354F /* ReviewView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		F719258A25374683008E935C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		F719258F253747B4008E935C /* BigButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigButton.swift; sourceTree = "<group>"; };
 		F719259325374BE8008E935C /* PccHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PccHeader.swift; sourceTree = "<group>"; };
+		F71A75292539E58A00BB354F /* FrontCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontCardView.swift; sourceTree = "<group>"; };
+		F71A752C2539ECAF00BB354F /* BackCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackCardView.swift; sourceTree = "<group>"; };
+		F71A752F2539F41500BB354F /* ConfirmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmView.swift; sourceTree = "<group>"; };
+		F71A75322539F48100BB354F /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +90,10 @@
 			children = (
 				F719258A25374683008E935C /* HomeView.swift */,
 				F719259325374BE8008E935C /* PccHeader.swift */,
+				F71A75292539E58A00BB354F /* FrontCardView.swift */,
+				F71A752C2539ECAF00BB354F /* BackCardView.swift */,
+				F71A752F2539F41500BB354F /* ConfirmView.swift */,
+				F71A75322539F48100BB354F /* ReviewView.swift */,
 			);
 			path = NavigationViews;
 			sourceTree = "<group>";
@@ -164,9 +176,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7192590253747B4008E935C /* BigButton.swift in Sources */,
+				F71A75332539F48100BB354F /* ReviewView.swift in Sources */,
 				F719258B25374683008E935C /* HomeView.swift in Sources */,
+				F71A752A2539E58A00BB354F /* FrontCardView.swift in Sources */,
 				F719257D25374620008E935C /* ContentView.swift in Sources */,
 				F719257B25374620008E935C /* PccSwiftUIApp.swift in Sources */,
+				F71A75302539F41500BB354F /* ConfirmView.swift in Sources */,
+				F71A752D2539ECAF00BB354F /* BackCardView.swift in Sources */,
 				F719259425374BE8008E935C /* PccHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
