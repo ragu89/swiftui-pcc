@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct BackCardView: View {
+    
+    @State var selection: Int? = nil
+    
     var body: some View {
         VStack {
             Spacer()
@@ -16,8 +19,13 @@ struct BackCardView: View {
             
             Spacer()
             
-            NavigationLink(destination: ReviewView()) {
-                Text("Next")
+            NavigationLink(destination: ReviewView(),
+                           tag: 1,
+                           selection: $selection) {
+                LargeButton(title: "Next") {
+                    print("Next button tapped")
+                    self.selection = 1
+                }
             }
             
         }

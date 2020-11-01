@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ReviewView: View {
+    
+    @State var selection: Int? = nil
+    
     var body: some View {
         VStack {
             Spacer()
@@ -16,8 +19,13 @@ struct ReviewView: View {
             
             Spacer()
             
-            NavigationLink(destination: ConfirmView()) {
-                Text("Next")
+            NavigationLink(destination: ConfirmView(),
+                           tag: 1,
+                           selection: $selection) {
+                LargeButton(title: "Next") {
+                    print("Next button tapped")
+                    self.selection = 1
+                }
             }
             
         }

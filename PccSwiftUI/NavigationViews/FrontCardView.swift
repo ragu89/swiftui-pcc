@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct FrontCardView: View {
+    
+    @State var selection: Int? = nil
+    
     var body: some View {
         VStack {
             Spacer()
@@ -16,8 +19,13 @@ struct FrontCardView: View {
             
             Spacer()
             
-            NavigationLink(destination: BackCardView()) {
-                Text("Next")
+            NavigationLink(destination: BackCardView(),
+                           tag: 1,
+                           selection: $selection) {
+                LargeButton(title: "Next") {
+                    print("Next button tapped")
+                    self.selection = 1
+                }
             }
             
         }

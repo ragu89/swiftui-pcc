@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ConfirmView: View {
+    
+    @State var selection: Int? = nil
+    
     var body: some View {
         
         VStack() {
@@ -15,8 +18,14 @@ struct ConfirmView: View {
             Spacer()
             
             NavigationLink(
-                destination: HomeView()) {
-                    Text("Reset and back to home")
+                destination: HomeView(),
+                tag: 1,
+                selection: $selection) {
+                
+                LargeButton(title: "Reset and back to home") {
+                    print("Next button tapped")
+                    self.selection = 1
+                }
             }
             
             Spacer()
